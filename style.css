@@ -1,0 +1,452 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+}
+.mainan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 15px 0;
+}
+.logoPart {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logoPart h2 {
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.logoPart h2:hover {
+  color: #7843e9;
+}
+.logoPart img {
+  border: 1px solid #88a1ee;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.menuPart {
+  width: 60%;
+}
+.menuPart1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.menuPart1 li {
+  cursor: pointer;
+}
+.menuPart1 li:hover {
+  color: #7843e9;
+}
+.heroSection {
+  color: #fff;
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url(./Images/common-bg.svg);
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.mainHero {
+  width: 65%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainHero h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #111;
+  font-weight: 800;
+}
+.mainHero p {
+  color: #333;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 89%;
+  line-height: 1.6;
+}
+.mainHero button {
+  background: #7843e9;
+  color: #fff;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  padding: 20px 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+}
+.mouseTap {
+  position: absolute;
+  left: 48%;
+  top: 85%;
+}
+.mouseTap img {
+  width: 50px;
+}
+.aboutMeSection {
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+.aboutme {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.aboutme h1 {
+  margin: 0 0 40px 0;
+  display: block;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  position: relative;
+  color: #111;
+}
+.aboutme h1::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 3rem;
+  background: #7843e9;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+.aboutme p {
+  display: block;
+  text-align: center;
+  color: #555;
+  font-size: 1.5rem;
+  font-weight: 500;
+  max-width: 80rem;
+  margin: auto;
+  line-height: 1.6;
+}
+.mainAbout {
+  padding: 50px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.frontend {
+  width: 45%;
+}
+.frontend h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  margin-bottom: 15px;
+}
+.frontend p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.frontend button {
+  background: #7843e9;
+  color: #fff;
+  padding: 20px 50px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.mySkills {
+  width: 45%;
+}
+.mySkills h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  margin-bottom: 15px;
+}
+.skills img {
+  width: 50px;
+}
+.skills p {
+  margin: 0;
+}
+.skills {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  gap: 10px;
+}
+.skills > div {
+  width: 120px;
+  background-color: rgba(153, 153, 153, 0.2);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+.projectPart {
+  padding: 2rem 0;
+}
+.projects {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.projects h1 {
+  margin: 0 0 40px 0;
+  display: block;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  position: relative;
+  color: #111;
+}
+.projects h1::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 52rem;
+  background: #7843e9;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+.projects p {
+  display: block;
+  text-align: center;
+  color: #555;
+  font-size: 1.5rem;
+  font-weight: 500;
+  max-width: 80rem;
+  margin: auto;
+  line-height: 1.6;
+}
+.mainExperience {
+  width: 100%;
+  padding: 100px 0;
+}
+.projectsImg {
+  width: 80%;
+  margin: auto;
+}
+.mantraLabs {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4rem;
+  margin-bottom: 40px;
+}
+.mantraLabs > div {
+  border: none;
+  padding: 10px;
+}
+.mantraLabs img {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px;
+}
+.mantraLabs h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+.mantraLabs p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.mantraLabs button {
+  background: #7843e9;
+  color: #fff;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  padding: 20px 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+}
+.contactMe {
+  color: #fff;
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url(./Images/common-bg.svg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.mainForm {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.contactForm {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: white;
+  padding: 4rem;
+  margin-top: 6rem;
+  max-width: 80rem;
+  text-align: right;
+  width: 95%;
+  margin: 5rem auto 0 auto;
+}
+.mainForm label {
+  color: #666;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 1rem 0;
+  display: block;
+  text-align: left;
+}
+.mainForm input {
+  color: #333;
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  font-size: 1rem;
+  letter-spacing: 0px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.mainForm textarea {
+  color: #333;
+  padding: 2rem;
+  border: 1px solid #ebebeb;
+  font-size: 1rem;
+  letter-spacing: 0px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.mainForm button {
+  background: #7843e9;
+  color: #fff;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  padding: 20px 0;
+  width: 170px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  margin-top: 30px;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.footer {
+  width: 100%;
+  padding: 100px 0;
+  margin: auto;
+  background-color: #000;
+}
+.mainFooter {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.leftFooter {
+  width: 60%;
+}
+.leftFooter h1 {
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+.leftFooter p {
+  margin-top: 2rem;
+  color: #eee;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+.rightFooter h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+.rightFooter img {
+  background-color: #fff;
+  margin: 0 10px;
+}
+.footer hr {
+  width: 85%;
+  color: #555;
+}
+.copyright {
+  text-align: center;
+  margin-top: 50px;
+  color: #b3adad;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+.copyright a {
+  text-align: center;
+  margin-top: 50px;
+  color: #b3adad;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-decoration: none;
+}
